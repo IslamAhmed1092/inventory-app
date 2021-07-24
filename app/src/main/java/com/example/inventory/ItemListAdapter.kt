@@ -47,7 +47,7 @@ class ItemListAdapter(private val onItemClicked: (Item) -> Unit):
             }
 
             override fun areContentsTheSame(oldItem: Item, newItem: Item): Boolean {
-                return oldItem.itemName == newItem.itemName
+                return oldItem == newItem
             }
         }
     }
